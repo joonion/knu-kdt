@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-qna-bertscore"
+version = "0.1.0"
+description = "RAG QnA pipeline with Hugging Face LLMs and BERTScore evaluation"
+requires-python = ">=3.10"
+dependencies = [
+  "bert-score>=0.3.13",
+  "numpy>=1.24",
+  "ragas>=0.2.0",
+  "sentence-transformers>=3.0.0",
+  "torch>=2.1.0",
+  "transformers>=4.41.0",
+]
+
+[project.scripts]
+rag-qna = "rag_qna.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>무엇이든 물어보살!</title>
+    <style>
+        body { text-align: center; background-color: #f5f5f5; }
+        p { width: 600px; margin: 10px auto; padding: 10px; text-align: left; }
+        input { width: 300px; padding: 10px; font-size: 16px; }
+        button { padding: 10px; font-size: 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+<h1>무엇이든 물어보살!</h1>
+{% if chat %}
+    <p><b>질문:</b> {{chat['question']}}</p>
+    <p><b>답변:</b> {{chat['answer']}}</p>
+{% endif %}
+<form action="/ask" method="post">
+    <input type="text" name="question" placeholder="질문을 입력하세요">
+    <button type="submit">질문하기</button>
+</form>
+</body>

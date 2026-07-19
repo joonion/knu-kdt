@@ -1,4 +1,4 @@
-# KNU-KDT
+# 경북대학교 K-Digital Training
 
 본 교육 자료는 경북대학교 데이터융복합연구원이 운영하는 K-Digital Training 교육과정을 위해 제작하였습니다.
 
