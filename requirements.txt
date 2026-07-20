@@ -35,8 +35,11 @@ langchain-community
 langchain-classic
 langchain-openai
 langchain-huggingface
+langchain-chroma
 langchain-pinecone
 pymupdf
+bert-score
+ragas
 
 # web
 flask
